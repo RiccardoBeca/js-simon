@@ -10,7 +10,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 * Individuate gli elementi di cui avete bisogno per realizzare il programma.
 
 
-1. Genero un numero random creando una funzione e random math
+1. Genero un numero random creando una funzione con random math
 2. Creo un ciclo for per avere 5 numeri random
 3. Creo un array dove inserisco i 5 numeri random
 4. Creo un ciclo  while per creare  5 prompt per richiedere all'utente 5 numeri
@@ -18,3 +18,72 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 6. confronto i due array e controllo se i numeri inseriti dall'utente sono anche nell'array dei numeri generati randomicamente
 
 */
+
+
+const estraiNumeri = document.querySelector("button");
+
+let numeriPc = [];
+let numeriUtente = [];
+
+
+// funzione per numeri random 
+
+function estraiNumeriRandom(min, max) {
+  return Math.floor( Math.random() * (max - min + 1) + min );
+}
+
+
+// ciclo for per estrarre 5 numeri e pusharli nell'array
+
+for (let i = 0; i < 5; i++) {
+
+  numeriEstratti = estraiNumeriRandom(1, 100)
+  console.log(numeriEstratti);
+  numeriPc.push(numeriEstratti)
+  console.log(numeriPc);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// getNumbers.addEventListener("click", getRandomNumbers);
+
+// let pcNumbers = [];
+
+// function getRandomNumbers() {
+//   pcNumbers = 
+//   pcNumbers.length = 0;
+//   for (let i = 0; i < 5; i++) {
+
+//     let numeroEstratto = Math.ceil(Math.random() * 100);
+     
+//     console.log(numeroEstratto);   
+    
+//     pcNumbers.push(numeroEstratto);
+//     console.log(pcNumbers);
+//   }
+
+//   let outputNumbers = document.querySelector(".output");
+//   outputNumbers.append(pcNumbers);
+  
+  
+// }
+
+
+
+
+
+
+
+
+
